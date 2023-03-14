@@ -9,3 +9,5 @@ from .cpu_cooler import CpuCooler
 from .case_fan import CaseFan
 from .keyboard import Keyboard
 from .mouse import Mouse
+from .ssd import SSD
+from .help_request import HelpRequest
