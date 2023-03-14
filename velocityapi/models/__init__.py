@@ -7,3 +7,4 @@ from .ram import RAM
 from .case import Case
 from .cpu_cooler import CpuCooler
 from .case_fan import CaseFan
+from .keyboard import Keyboard
