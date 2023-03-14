@@ -5,3 +5,4 @@ from .gpu import GPU
 from .motherboard import Motherboard
 from .ram import RAM
 from .case import Case
+from .cpu_cooler import CpuCooler
