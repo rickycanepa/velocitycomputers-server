@@ -4,7 +4,7 @@ class Mouse(models.Model):
     title = models.CharField(max_length=100)
     link = models.CharField(max_length=100)
     img = models.CharField(max_length=100)
-    price = models.PositiveIntegerField()
+    price = models.DecimalField()
     brand = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
     tracking_method = models.CharField(max_length=100)

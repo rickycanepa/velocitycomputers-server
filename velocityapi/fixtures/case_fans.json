@@ -1,0 +1,17 @@
+[
+    {
+        "model": "velocityapi.casefan",
+        "pk": 1,
+        "fields": {
+            "title":"StarTech.com 92x25mm Dual Ball Bearing Computer Case Fan W/ LP4 Connector - 90mm Fan - Computer Case Fan - Pc Fan (FANBOX92)",
+            "link":"https://amazon.com/dp/B000050ZT9?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/31d6LykujlL._SL75_.jpg",
+            "price":10.48,
+            "brand":"StarTech",
+            "model":"FANBOX92",
+            "rpm":"2200 RPM",
+            "airflow":"39.35 CFM",
+            "noise_level":"26 dBA"
+        }
+    }
+]

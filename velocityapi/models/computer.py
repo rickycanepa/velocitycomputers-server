@@ -14,5 +14,5 @@ class Computer(models.Model):
     keyboard = models.ForeignKey("Keyboard", on_delete=models.CASCADE, related_name='computer')
     mouse = models.ForeignKey("Mouse", on_delete=models.CASCADE, related_name='computer')
     ssd = models.ForeignKey("SSD", on_delete=models.CASCADE, related_name='computer')
-    price = models.PositiveIntegerField()
+    price = models.DecimalField()
     likes = models.IntegerField(default=0)  
