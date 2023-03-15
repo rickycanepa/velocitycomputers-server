@@ -3,7 +3,7 @@ from django.db import models
 class Computer(models.Model):
     name = models.CharField(max_length=30)
     description = models.CharField(max_length=300)
-    user = models.ForeignKey("User", on_delete=models.CASCADE, related_name='computer') 
+    customer = models.ForeignKey("Customer", on_delete=models.CASCADE, related_name='computer_customer') 
     power_supply = models.ForeignKey("PowerSupply", on_delete=models.CASCADE, related_name='computer')
     processor = models.ForeignKey("Processor", on_delete=models.CASCADE, related_name='computer')
     gpu = models.ForeignKey("GPU", on_delete=models.CASCADE, related_name='computer')
