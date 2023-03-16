@@ -1,0 +1,58 @@
+[
+    {
+        "model": "velocityapi.processor",
+        "pk": 1,
+        "fields": {
+            "title": "Intel Core i5-10600K Desktop Processor 6 Cores up to 4.8 GHz Unlocked  LGA1200 (Intel 400 Series Chipset) 125W",
+            "link": "https://www.amazon.com/Intel-i5-10600K-Desktop-Processor-Unlocked/dp/B086MHSH2C/ref=sr_1_3?keywords=lga%2B1200%2Bprocessor&qid=1678987468&sr=8-3&th=1",
+            "img": "https://m.media-amazon.com/images/I/71LqOVOXZmL._AC_SL1500_.jpg",
+            "price": 181.47,
+            "brand": "Intel",
+            "model": "Core i5",
+            "speed": "4.1 GHz",
+            "socket_type": "LGA 1200"
+        }
+    },
+    {
+        "model": "velocityapi.processor",
+        "pk": 2,
+        "fields": {
+            "title": "Intel Core i9-10900 Desktop Processor 10 Cores up to 5.2 GHz LGA 1200 (Intel 400 Series Chipset) 65W",
+            "link": "https://www.amazon.com/Intel-i9-10900-Desktop-Processor-Chipset/dp/B086ML4XSD/ref=sr_1_2?keywords=lga+1200+processor&qid=1678987468&sr=8-2",
+            "img": "https://m.media-amazon.com/images/I/71J2jBmoOaL._AC_SL1500_.jpg",
+            "price": 446.99,
+            "brand": "Intel",
+            "model": "Core i9",
+            "speed": "2.8 GHz",
+            "socket_type": "LGA 1200"
+        }
+    },
+    {
+        "model": "velocityapi.processor",
+        "pk": 3,
+        "fields": {
+            "title": "Intel Core i7-10700 Desktop Processor 8 Cores up to 4.8 GHz LGA 1200 (Intel 400 Series Chipset) 65W, BX8070110700",
+            "link": "https://www.amazon.com/Intel-i7-10700-Desktop-Processor-BX8070110700/dp/B086MG1C7C/ref=sr_1_1?keywords=lga+1200+processor&qid=1678987468&sr=8-1",
+            "img": "https://m.media-amazon.com/images/I/61qS39IbZJL._AC_SL1000_.jpg",
+            "price": "256.99",
+            "brand": "Intel",
+            "model": "Core i7",
+            "speed": "2.9 GHz",
+            "socket_type": "LGA 1200" 
+        }
+    },
+    {
+        "model": "velocityapi.processor",
+        "pk": 4,
+        "fields": {
+            "title": "AMD Ryzen 9 5950X 100-100000059WOF Processor 16-Core 3.4GHz Socket AM4 CPU w/o Fan Retail",
+            "link": "https://www.amazon.com/AMD-100-100000059WOF-Processor-16-Core-3-4GHz/dp/B08SKRMFSD/ref=sr_1_2?keywords=am4+processor&qid=1678988146&sprefix=AM4+PRO%2Caps%2C115&sr=8-2",
+            "img": "https://m.media-amazon.com/images/I/51hybJp7KjL._AC_SL1200_.jpg",
+            "price": "489.99",
+            "brand": "AMD",
+            "model": "Ryzen 9",
+            "speed": "3.4 GHz",
+            "socket_type": "AM4" 
+        }
+    }
+]

@@ -13,5 +13,35 @@
             "airflow":"39.35 CFM",
             "noise_level":"26 dBA"
         }
+    },
+    {
+        "model": "velocityapi.casefan",
+        "pk": 2,
+        "fields": {
+            "title":"StarTech.com 80x25mm Dual Ball Bearing Computer Case Fan W/ LP4 Connector - Computer Case Fan - 80mm Fan - Pc Fan (FANBOX), Black",
+            "link":"https://amazon.com/dp/B00006B8E0?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/41aQmyJ-XcL._SL75_.jpg",
+            "price":11.65,
+            "brand":"StarTech",
+            "model":"FAN8X25TX3L",
+            "rpm":"200 RPM",
+            "airflow":"26.6 CFM",
+            "noise_level":"27 dBA"
+        }
+    },
+    {
+        "model": "velocityapi.casefan",
+        "pk": 3,
+        "fields": {
+            "title":"StarTech.com 90x25mm High Air Flow Dual Ball Bearing Computer Case Fan W/ TX3 (FAN9X25TX3H), Black",
+            "link":"https://amazon.com/dp/B00006B8E2?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/41ZGYDhkwOL._SL75_.jpg",
+            "price":8.24,
+            "brand":"StarTech",
+            "model":"FAN8X25TX3L",
+            "rpm":"2600 RPM",
+            "airflow":"48.43 CFM",
+            "noise_level":"33 dBA"
+        }
     }
 ]

@@ -1,0 +1,26 @@
+[
+    {
+        "model": "velocityapi.ssd",
+        "pk": 1,
+        "fields": {
+            "title": "SAMSUNG 870 EVO SATA SSD 500GB 2.5” Internal Solid State Drive",
+            "link": "https://www.amazon.com/SAMSUNG-500GB-Internal-MZ-77E500B-AM/dp/B08QBMD6P4/ref=sxin_16_ac_d_hl?ac_md=1-0-T3ZlcmFsbCBDaG9pY2U%3D-ac_d_hl_hl_ac&content-id=amzn1.sym.ea5a3043-3172-4e81-bcc4-eb7524db4f7c%3Aamzn1.sym.ea5a3043-3172-4e81-bcc4-eb7524db4f7c&crid=2ZP8VCOGVDMNJ&cv_ct_cx=ssd&keywords=ssd&pd_rd_i=B08QBMD6P4&pd_rd_r=abebcb47-022f-4bce-ac37-2b080e38365a&pd_rd_w=z5jmB&pd_rd_wg=FRXQw&pf_rd_p=ea5a3043-3172-4e81-bcc4-eb7524db4f7c&pf_rd_r=K1BM0ZDH9KHPKH532FVA&qid=1678996951&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=ssd%2Caps%2C151&sr=1-1-25fd44b4-555a-4528-b40c-891e95133f20&th=1",
+            "img": "https://m.media-amazon.com/images/I/911ujeCkGfL._AC_SL1500_.jpg",
+            "price": 39.99,
+            "size": "500 GB",
+            "m2": false
+        }
+    },
+    {
+        "model": "velocityapi.ssd",
+        "pk": 1,
+        "fields": {
+            "title": "WD_BLACK 1TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280",
+            "link": "https://www.amazon.com/WD_BLACK-SN770-Internal-Gaming-Solid/dp/B09QV692XY/ref=sr_1_1_sspa?crid=2HQJM4N2VKAHX&keywords=ssd+m.2&qid=1678997304&s=electronics&sprefix=ssd+m.2%2Celectronics%2C160&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFOWURMWEgxVU4zQVAmZW5jcnlwdGVkSWQ9QTA2Njk2MTdCSUVYWlFVNDRIMzImZW5jcnlwdGVkQWRJZD1BMDg2NjY3ODJSTTBIMEMzRUdYR0omd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl",
+            "img": "https://m.media-amazon.com/images/I/51vNa5DEr4L._AC_SL1100_.jpg",
+            "price": 59.99,
+            "size": "1 TB",
+            "m2": true
+        }
+    }
+]

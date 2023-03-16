@@ -1,0 +1,47 @@
+[
+    {
+        "model": "velocityapi.mouse",
+        "pk": 1,
+        "fields": {
+            "title": "Logitech Gaming Mouse G300 With Nine Programmable Controls (910-002358)",
+            "link" : "https://amazon.com/dp/B005EWB3AU?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/410AaIFPkXL._SL75_.jpg",
+            "price": 59.99,
+            "brand": "Logitech",
+            "model": "G300",
+            "tracking_method": "Optical",
+            "color": "Gray",
+            "wireless": false
+        }
+    },
+    {
+        "model": "velocityapi.mouse",
+        "pk": 2,
+        "fields": {
+            "title": "Logitech Optical Gaming Mouse G400 With High-Precision 3600 DPI Optical Engine",
+            "link" : "https://amazon.com/dp/B0055QZ216?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41VI09rPyjL._SL75_.jpg",
+            "price": 99.99,
+            "brand": "Logitech",
+            "model": "910-002277",
+            "tracking_method": "Optical",
+            "color": "Black",
+            "wireless": false
+        }
+    },
+    {
+        "model": "velocityapi.mouse",
+        "pk": 3,
+        "fields": {
+            "title": "Razer Imperator Ergonomic PC Gaming Mouse",
+            "link" : "https://amazon.com/dp/B0054JGGFK?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41RGGMLzA3L._SL75_.jpg",
+            "price": 119.00,
+            "brand": "Razer",
+            "model": "RZ01-00350200-R3U1",
+            "tracking_method": "Laser",
+            "color": "Black",
+            "wireless": false
+        }
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "model": "velocityapi.keyboard",
+        "pk": 1,
+        "fields": {
+            "title": "FILCO Majestouch Ninja (Cherry MX Black) Keyboard",
+            "link": "https://amazon.com/dp/B004Z0XSAA?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41XkeCUNcfL._SL75_.jpg",
+            "price": 113.95,
+            "brand": "FILCO",
+            "model": "Ninja Majestouch-2",
+            "style": "Standard",
+            "backlit": "White",
+            "color": "Black",
+            "wireless": false
+        }
+    },
+    {
+        "model": "velocityapi.keyboard",
+        "pk": 2,
+        "fields": {
+            "title": "Logitech Gaming Keyboard G510",
+            "link": "https://amazon.com/dp/B003VAK16O?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41UaRFX5u9L._SL75_.jpg",
+            "price": 688.99,
+            "brand": "Logitech",
+            "model": "G510",
+            "style": "Gaming",
+            "backlit": "RGB",
+            "color": "Black",
+            "wireless": false
+        }
+    },
+    {
+        "model": "velocityapi.keyboard",
+        "pk": 3,
+        "fields": {
+            "title": "Logitech MK520 Wireless Keyboard And Mouse Combo — Keyboard And Mouse, Long Battery Life, Secure 2.4GHz Connectivity",
+            "link": "https://amazon.com/dp/B003VANO7C?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41PmiEZVQWL._SL75_.jpg",
+            "price": 60.03,
+            "brand": "Logitech",
+            "model": "MK520",
+            "style": "Ergonomic",
+            "backlit": "White",
+            "color": "Black",
+            "wireless": true
+        }
+    }
+]

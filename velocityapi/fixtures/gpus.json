@@ -1,0 +1,50 @@
+[
+    {
+        "model": "velocityapi.gpu",
+        "pk": 1,
+        "fields": {
+            "title": "XFX Speedster MERC319 Radeon RX 6800XT Black 16GB GDDR6 HDMI DisplayPort USB-C PCIe 4.0 Gaming Graphics Card RX-68XTACBD9",
+            "link": "https://amazon.com/dp/B08NX14LV1?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/51tEWS0RnyL._SL75_.jpg",
+            "price": 995,
+            "brand": "AMD",
+            "model": "Speedster MERC319 RX-68XTACBD9",
+            "storage_interface": "PCIe 4.0 x16",
+            "memory": "16 GB",
+            "clockSpeed": "2360 MHz",
+            "chipset": "Radeon RX 6800 XT" 
+        }
+    },
+    {
+        "model": "velocityapi.gpu",
+        "pk": 2,
+        "fields": {
+            "title": "ASUS KO NVIDIA GeForce RTX 3070 OC Edition 8GB GDDR6 Gaming Graphics Card (PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech",
+            "link": "https://amazon.com/dp/B08MT6B58K?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/513tqw8wuEL._SL75_.jpg",
+            "price": 769.9,
+            "brand": "NVIDIA",
+            "model": "KO NVIDIA GeForce RTX 3070 OC",
+            "storage_interface": "PCIe 4.0 x16",
+            "memory": "8 GB",
+            "clockSpeed": "1845 MHz",
+            "chipset": "Radeon RX 6800 XT" 
+        }
+    },
+    {
+        "model": "velocityapi.gpu",
+        "pk": 3,
+        "fields": {
+            "title": "EVGA GeForce RTX 3090 FTW3 Ultra Gaming, 24GB GDDR6X, ICX3 Technology, ARGB LED, Metal Backplate, 24G-P5-3987-KR",
+            "link": "https://amazon.com/dp/B08J6GMWCQ?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/51qTaaObeGL._SL75_.jpg",
+            "price": 2159,
+            "brand": "NVIDIA",
+            "model": "ROG-STRIX-RTX3090-O24G-GAMING",
+            "storage_interface": "PCIe 4.0 x16",
+            "memory": "24 GB",
+            "clockSpeed": "1890 MHz",
+            "chipset": "GeForce RTX 3090" 
+        }
+    }
+]

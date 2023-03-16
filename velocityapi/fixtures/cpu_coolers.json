@@ -1,0 +1,50 @@
+[
+    {
+        "model": "velocityapi.cpucooler",
+        "pk": 1,
+        "fields": {
+            "title":"Thermaltake CL-P0187 1U Active Cooling Solution For Intel LGA775",
+            "link":"https://amazon.com/dp/B0009FV5PK?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/512OFsDQEtL._SL75_.jpg",
+            "price":32.95,
+            "brand":"Thermaltake",
+            "model":"CL-P0187",
+            "is_water_cooled": false,
+            "rpm": "4800 RPM",
+            "color": "Black",
+            "noise_level": "36 dBA"
+        }
+    },
+    {
+        "model": "velocityapi.cpucooler",
+        "pk": 2,
+        "fields": {
+            "title":"Zalman Computer Noise Prevention System With Silent Fan Pure Copper Heatsink CPU Cooler CNPS9500AT",
+            "link":"https://amazon.com/dp/B000HKDA0U?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/515kj0ApQvL._SL75_.jpg",
+            "price":29.99,
+            "brand":"Zalman",
+            "model":"CNPS9500AT",
+            "is_water_cooled": false,
+            "rpm": "2650 RPM",
+            "color": "Black",
+            "noise_level": "27.5 dBA"
+        }
+    },
+    {
+        "model": "velocityapi.cpucooler",
+        "pk": 3,
+        "fields": {
+            "title":"V1 CPU Cooler",
+            "link":"https://amazon.com/dp/B000PTIX50?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/51ozQN3aZqL._SL75_.jpg",
+            "price":69.99,
+            "brand":"Thermaltake",
+            "model":"P0401",
+            "is_water_cooled": false,
+            "rpm": "2000 RPM",
+            "color": "RGB",
+            "noise_level": "24 dBA"
+        }
+    }
+]

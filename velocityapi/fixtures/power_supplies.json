@@ -1,0 +1,47 @@
+[
+    {
+        "model": "velocityapi.powersupply",
+        "pk": 1,
+        "fields": {
+            "title": "Antec HCG750 Gold Power Supply 750 Watts 80 PLUS Gold PSU With Full Modular, 120mm FDB Fan, Japanese Capacitors, ATX12V 2.4, 10 Years Support",
+            "link": "https://amazon.com/dp/B0009P7J0K?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41URyw2QYZL._SL75_.jpg",
+            "price": 135.99,
+            "brand": "Antec",
+            "model": "HCG750 Gold",
+            "power": "750 W",
+            "color": "Black",
+            "efficiency": "80+ Gold"
+        }
+    },
+    {
+        "model": "velocityapi.powersupply",
+        "pk": 2,
+        "fields": {
+            "title": "Corsair Professional Series HX1000 80 Plus Certified Modular Power Supply (CMPSU-1000HX)",
+            "link": "https://amazon.com/dp/B00154QAXQ?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41CW6BBaGQL._SL75_.jpg",
+            "price": 499.99,
+            "brand": "Corsair",
+            "model": "HX1000",
+            "power": "1000 W",
+            "color": "Black",
+            "efficiency": "80+"
+        }
+    },
+    {
+        "model": "velocityapi.powersupply",
+        "pk": 3,
+        "fields": {
+            "title": "Corsair CMPSU-850TX 850-Watt TX Series 80 Plus Certified Power Supply Compatible With Core I7 And Core I5",
+            "link": "https://amazon.com/dp/B001M3G42W?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/51YKXHsif9L._SL75_.jpg",
+            "price": 499.99,
+            "brand": "Corsair",
+            "model": "CMPSU-850TX",
+            "power": "850 W",
+            "color": "Black",
+            "efficiency": "80+"
+        }
+    }
+]

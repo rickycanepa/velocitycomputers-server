@@ -1,0 +1,11 @@
+[
+    {
+        "model": "velocityapi.helprequest",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "subject": "What processor is best for music production?",
+            "body": "What processor should I get for music production software and loading many vsts?" 
+        }
+    }
+]

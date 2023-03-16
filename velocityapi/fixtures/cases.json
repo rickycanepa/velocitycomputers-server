@@ -1,0 +1,47 @@
+[
+    {
+        "model": "velocityapi.case",
+        "pk": 1,
+        "fields": {
+            "title":"Antec Performance Series P120 Crystal E-ATX Mid-Tower Case, Tempered Glass Front & Side Panels White Led USB3.0 X 2, Aluminum Vga Holder Included - PC",
+            "link":"https://amazon.com/dp/B00006B6UL?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/41nDuZNb2ML._SL75_.jpg",
+            "price":153.35,
+            "brand":"Antec",
+            "model":"P120 Crystal",
+            "side_panel":"Tempered Glass",
+            "color": "Black",
+            "cabinet_type":"ATX Mid Tower"
+        }
+    },
+    {
+        "model": "velocityapi.case",
+        "pk": 2,
+        "fields": {
+            "title":"AZZA Apollo 430B-DF2 Tower Case Black/Grey Tempered Glass",
+            "link":"https://amazon.com/dp/B002VA87W0?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/418c+4ydXzL._SL75_.jpg",
+            "price":241.00,
+            "brand":"AZZA",
+            "model":"430B",
+            "side_panel": "Tempered Glass",
+            "color": "Black",
+            "cabinet_type": "ATX Mid Tower"
+        }
+    },
+    {
+        "model": "velocityapi.case",
+        "pk": 3,
+        "fields": {
+            "title":"Silverstone Aluminum Front Panel/SECC Structure Micro ATX Mid Tower Computer Case SG04B-F (Black)",
+            "link":"https://amazon.com/dp/B00006B6UL?tag=pcbuildcompat-20",
+            "img":"https://m.media-amazon.com/images/I/41nDuZNb2ML._SL75_.jpg",
+            "price":177.92,
+            "brand":"SilverStone Technology",
+            "model":"SG04B-F",
+            "side_panel":"Steel",
+            "color":"Black",
+            "cabinet_type":"MicroATX Mini Tower"
+        }
+    }
+]

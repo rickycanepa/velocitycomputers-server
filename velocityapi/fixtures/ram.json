@@ -1,0 +1,32 @@
+[
+    {
+        "model": "velocityapi.ram",
+        "pk": 1,
+        "fields": {
+            "title": "Corsair Vengeance LPX 32GB (2X16GB) DDR4 3200 (PC4-25600) C16 1.35V Desktop Memory",
+            "link": "https://www.amazon.com/Corsair-Vengeance-PC4-25600-Desktop-Memory/dp/B07RW6Z692/ref=sr_1_3?crid=3E8TL07EHBI9Y&keywords=ddr4+ram&qid=1678990125&sprefix=ddr4+ram%2Caps%2C147&sr=8-3",
+            "img": "https://m.media-amazon.com/images/I/518T3hrUY4L._AC_SL1200_.jpg",
+            "price": 74.99,
+            "brand": "Corsair",
+            "model": "Vengeance",
+            "size": "32 GB",
+            "quantity": "2 x 16 GB",
+            "type": "DDR4"
+        }
+    },
+    {
+        "model": "velocityapi.ram",
+        "pk": 1,
+        "fields": {
+            "title": "Corsair Vengeance LPX 16GB (2 X 8GB) DDR4 3200 (PC4-25600) C16 1.35V Desktop Memory",
+            "link": "https://www.amazon.com/Corsair-Vengeance-PC4-25600-Desktop-Memory/dp/B07RS1G6XW/ref=sr_1_4?crid=3E8TL07EHBI9Y&keywords=ddr4+ram&qid=1678990915&sprefix=ddr4+ram%2Caps%2C147&sr=8-4",
+            "img": "https://m.media-amazon.com/images/I/51gLnYN1W7L._AC_SL1100_.jpg",
+            "price": 39.99,
+            "brand": "Corsair",
+            "model": "Vengeance",
+            "size": "16 GB",
+            "quantity": "2 x 8 GB",
+            "type": "DDR4"
+        }
+    }
+]

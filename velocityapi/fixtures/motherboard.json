@@ -1,0 +1,50 @@
+[
+    {
+        "model": "velocityapi.motherboard",
+        "pk": 1,
+        "fields": {
+            "title": "ASUS ROG Strix Z490-E Gaming Z490- WiFi 6, LGA 1200 (Intel 10th Gen) ATX Gaming Motherboard, 14+2 Power Stages, DDR4 4600, Intel 2.5 Gb Ethernet",
+            "link": "https://amazon.com/dp/B086QSD3M4?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/511QBgsXOsL._SL75_.jpg",
+            "price": 168.99,
+            "brand": "ASUS",
+            "model": "TUF Gaming Z490-PLUS (WI-FI)",
+            "form_factor": "ATX",
+            "chipset": "Intel Z490",
+            "memory_slots": "4",
+            "socket_type": "LGA 1200"
+        }
+    },
+    {
+        "model": "velocityapi.motherboard",
+        "pk": 2,
+        "fields": {
+            "title": "GIGABYTE B560M AORUS PRO AX (LGA 1200/ Intel/ B560/ Micro-ATX/Dual M.2/ PCIe 4.0/ USB 3.2 Gen2X2 Type-C/Intel WiFi 6/2.5GbE LAN/Motherboard)",
+            "link": "https://amazon.com/dp/B086QSD3M4?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/511QBgsXOsL._SL75_.jpg",
+            "price": 208.1,
+            "brand": "Gigabyte",
+            "model": "B560M AORUS PRO AX",
+            "form_factor": "Micro ATX",
+            "chipset": "Intel B569",
+            "memory_slots": "4",
+            "socket_type": "LGA 1200"
+        }
+    },
+    {
+        "model": "velocityapi.motherboard",
+        "pk": 3,
+        "fields": {
+            "title": "GIGABYTE B550 Vision D-P (AM4/ AMD/ B550/ ATX/Dual M.2/ SATA 6Gb/s/USB 3.2 Type-C/Thunderbolt 3/ WiFi 6/ Dual 2.5GbE LAN/PCIe 4.0/ Motherboard)",
+            "link": "https://amazon.com/dp/B083GTJQFB?tag=pcbuildcompat-20",
+            "img": "https://m.media-amazon.com/images/I/41ZAkiMbL5L._SL75_.jpg",
+            "price": 239.99,
+            "brand": "Gigabyte",
+            "model": "B550 VISION D-P",
+            "form_factor": "ATX",
+            "chipset": "AMD B550",
+            "memory_slots": "4",
+            "socket_type": "AM4"
+        }
+    }
+]
