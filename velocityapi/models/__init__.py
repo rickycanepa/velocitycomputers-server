@@ -12,3 +12,4 @@ from .mouse import Mouse
 from .ssd import SSD
 from .help_request import HelpRequest
 from .customer import Customer
+from .favorite import Favorite

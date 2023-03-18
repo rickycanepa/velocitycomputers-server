@@ -1,4 +1,5 @@
 from django.db import models
+from .customer import Customer
 
 class Computer(models.Model):
     name = models.CharField(max_length=30)
@@ -15,4 +16,12 @@ class Computer(models.Model):
     mouse = models.ForeignKey("Mouse", on_delete=models.CASCADE, related_name='computer')
     ssd = models.ForeignKey("SSD", on_delete=models.CASCADE, related_name='computer')
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    likes = models.IntegerField(default=0)  
+    likes = models.ManyToManyField(Customer, through='Favorite', related_name='computers_favorited')
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value

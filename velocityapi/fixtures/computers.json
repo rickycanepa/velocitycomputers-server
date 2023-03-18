@@ -1,0 +1,22 @@
+[
+    {
+        "model": "velocityapi.computer",
+        "pk": 1,
+        "fields": {
+            "name": "Ricky's Build",
+            "description": "puter go fast",
+            "customer": 1,
+            "power_supply": 2,
+            "processor": 1,
+            "gpu": 2,
+            "motherboard": 1,
+            "ram": 2,
+            "case": 1,
+            "cpu_cooler": 2,
+            "keyboard": 1,
+            "mouse": 1,
+            "ssd": 2,
+            "price": 1000
+        }
+    }
+]

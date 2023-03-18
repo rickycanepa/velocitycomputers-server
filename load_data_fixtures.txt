@@ -1,0 +1,27 @@
+Run these commands if you need to remigrate and load new fixtures to data tables
+
+first:
+
+python3 manage.py makemigrations velocityapi
+python3 manage.py migrate
+
+second:
+
+python3 manage.py loaddata users
+python3 manage.py loaddata tokens
+python3 manage.py loaddata customers
+python3 manage.py loaddata case_fans
+python3 manage.py loaddata cases 
+python3 manage.py loaddata cpu_coolers
+python3 manage.py loaddata gpus
+python3 manage.py loaddata keyboards
+python3 manage.py loaddata mice
+python3 manage.py loaddata motherboard
+python3 manage.py loaddata power_supplies
+python3 manage.py loaddata processors
+python3 manage.py loaddata ram 
+python3 manage.py loaddata ssds
+python3 manage.py loaddata computers
+python3 manage.py loaddata help_requests
+python3 manage.py loaddata favorites
+

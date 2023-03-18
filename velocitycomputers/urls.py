@@ -14,8 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls import include
 from django.urls import path
+from velocityapi.views import register_user, login_user
+from django.conf.urls import include
+from rest_framework import routers
+from velocityapi.views import CaseFanView, CaseView, ComputerView
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'casefans', CaseFanView, 'casefan')
+router.register(r'cases', CaseView, 'case')
+router.register(r'computers', ComputerView, 'computer')
 
 urlpatterns = [
+    path('register', register_user),
+    path('login', login_user),
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]

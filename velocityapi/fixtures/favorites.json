@@ -1,0 +1,10 @@
+[
+    {
+        "model": "velocityapi.favorite",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "computer": 1
+        }
+    }
+]
