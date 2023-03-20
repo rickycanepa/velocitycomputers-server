@@ -36,5 +36,5 @@ class PowerSupplySerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = PowerSupply
-        fields = ('id', 'title', "link", "img", "price", "brand", "model", "side_panel", "color", "cabinet_type")
+        fields = ('id', 'title', "link", "img", "price", "brand", "model", "power", "color", "efficiency")
 
