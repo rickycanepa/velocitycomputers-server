@@ -7,4 +7,4 @@ from .customer_view import CustomerView
 from .gpu_view import GPUView
 from .keyboard_view import KeyboardView
 from .motherboard_view import MotherboardView
-from mouse_view import MouseView
+from .mouse_view import MouseView
