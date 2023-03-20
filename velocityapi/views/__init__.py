@@ -8,4 +8,4 @@ from .gpu_view import GPUView
 from .keyboard_view import KeyboardView
 from .motherboard_view import MotherboardView
 from .mouse_view import MouseView
-from. power_supply_view import PowerSupply
+from. power_supply_view import PowerSupplyView
