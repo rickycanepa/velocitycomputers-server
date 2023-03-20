@@ -10,3 +10,4 @@ from .motherboard_view import MotherboardView
 from .mouse_view import MouseView
 from .power_supply_view import PowerSupplyView
 from .processor_view import ProcessorView
+from .ram_view import RamView
