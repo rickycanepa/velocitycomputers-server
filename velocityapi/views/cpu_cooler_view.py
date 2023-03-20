@@ -7,7 +7,7 @@ from velocityapi.models import CpuCooler
 
 
 class CpuCoolerView(ViewSet):
-    """cpu cooler view"""
+    """Velocity cpu cooler view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single cpu cooler

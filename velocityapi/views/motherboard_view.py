@@ -7,7 +7,7 @@ from velocityapi.models import Motherboard
 
 
 class MotherboardView(ViewSet):
-    """Level up motherboards view"""
+    """Velocity motherboards view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single motherboard

@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 class ComputerView(ViewSet):
-    """Level up computers view"""
+    """Velocity computers view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single computer

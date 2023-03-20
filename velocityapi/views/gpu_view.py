@@ -7,7 +7,7 @@ from velocityapi.models import GPU
 
 
 class GPUView(ViewSet):
-    """Level up gpus view"""
+    """Velocity gpus view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single gpu

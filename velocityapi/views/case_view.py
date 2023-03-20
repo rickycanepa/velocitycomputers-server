@@ -7,7 +7,7 @@ from velocityapi.models import Case
 
 
 class CaseView(ViewSet):
-    """Level up cases view"""
+    """Velocity cases view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single case

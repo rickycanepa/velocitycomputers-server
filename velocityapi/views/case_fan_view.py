@@ -7,7 +7,7 @@ from velocityapi.models import CaseFan
 
 
 class CaseFanView(ViewSet):
-    """Level up case fans view"""
+    """Velocity case fans view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single case fan

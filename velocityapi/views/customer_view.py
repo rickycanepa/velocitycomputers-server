@@ -7,7 +7,7 @@ from velocityapi.models import Customer
 
 
 class CustomerView(ViewSet):
-    """customer view"""
+    """Velocity customer view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single customer

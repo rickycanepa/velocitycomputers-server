@@ -7,7 +7,7 @@ from velocityapi.models import Keyboard
 
 
 class KeyboardView(ViewSet):
-    """Level up keyboards view"""
+    """Velocity keyboards view"""
 
     def retrieve(self, request, pk):
         """Handle GET requests for single keyboard
