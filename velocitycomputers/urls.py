@@ -22,7 +22,7 @@ from rest_framework import routers
 from velocityapi.views import CaseFanView, CaseView, ComputerView, CpuCoolerView, CustomerView, GPUView, KeyboardView, MotherboardView, MouseView, PowerSupplyView, ProcessorView, RamView, SsdView
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'casefans', CaseFanView, 'casefan')
+router.register(r'case_fans', CaseFanView, 'casefan')
 router.register(r'cases', CaseView, 'case')
 router.register(r'computers', ComputerView, 'computer')
 router.register(r'cpu_coolers', CpuCoolerView, 'cpu_cooler')
