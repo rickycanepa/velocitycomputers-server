@@ -36,5 +36,4 @@ class SsdSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = SSD
-        fields = ('id', 'title', "link", "img", "price", "brand", "model", "size", "quantity", "type")
-
+        fields = ('id', 'title', "link", "img", "price", "brand", "size", "m2")
