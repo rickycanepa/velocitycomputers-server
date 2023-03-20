@@ -32,7 +32,7 @@ class CaseFanView(ViewSet):
         return Response(serializer.data)
     
 class CaseFanSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types
+    """JSON serializer for case fans
     """
     class Meta:
         model = CaseFan

@@ -32,7 +32,7 @@ class CpuCoolerView(ViewSet):
         return Response(serializer.data)
     
 class CpuCoolerSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types
+    """JSON serializer for cpu coolers
     """
     class Meta:
         model = CpuCooler

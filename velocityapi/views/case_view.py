@@ -1,4 +1,4 @@
-"""View module for handling requests about case fans"""
+"""View module for handling requests about cases"""
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -7,14 +7,14 @@ from velocityapi.models import Case
 
 
 class CaseView(ViewSet):
-    """Level up case fans view"""
+    """Level up cases view"""
 
     def retrieve(self, request, pk):
-        """Handle GET requests for single case fan
+        """Handle GET requests for single case
         
 
         Returns:
-            Response -- JSON serialized case fan
+            Response -- JSON serialized case
         """
         case = Case.objects.get(pk=pk)
         serializer = CaseSerializer(case)
@@ -22,17 +22,17 @@ class CaseView(ViewSet):
 
 
     def list(self, request):
-        """Handle GET requests to get all case fans
+        """Handle GET requests to get all cases
 
         Returns:
-            Response -- JSON serialized list of case fans
+            Response -- JSON serialized list of cases
         """
         cases = Case.objects.all()
         serializer = CaseSerializer(cases, many=True)
         return Response(serializer.data)
     
 class CaseSerializer(serializers.ModelSerializer):
-    """JSON serializer for game types
+    """JSON serializer for cases
     """
     class Meta:
         model = Case
