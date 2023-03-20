@@ -19,7 +19,7 @@ from django.urls import path
 from velocityapi.views import register_user, login_user
 from django.conf.urls import include
 from rest_framework import routers
-from velocityapi.views import CaseFanView, CaseView, ComputerView, CpuCoolerView, CustomerView, GPUView, KeyboardView
+from velocityapi.views import CaseFanView, CaseView, ComputerView, CpuCoolerView, CustomerView, GPUView, KeyboardView, MotherboardView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'casefans', CaseFanView, 'casefan')
@@ -29,6 +29,7 @@ router.register(r'cpu_coolers', CpuCoolerView, 'cpu_cooler')
 router.register(r'customers', CustomerView, 'customer')
 router.register(r'gpus', GPUView, 'gpu')
 router.register(r'keyboards', KeyboardView, 'keyboard')
+router.register(r'motherboards', MotherboardView, 'motherboard')
 
 urlpatterns = [
     path('register', register_user),
