@@ -5,3 +5,4 @@ from .computer_view import ComputerView
 from .cpu_cooler_view import CpuCoolerView
 from .customer_view import CustomerView
 from .gpu_view import GPUView
+from .keyboard_view import KeyboardView
