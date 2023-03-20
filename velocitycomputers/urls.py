@@ -19,13 +19,14 @@ from django.urls import path
 from velocityapi.views import register_user, login_user
 from django.conf.urls import include
 from rest_framework import routers
-from velocityapi.views import CaseFanView, CaseView, ComputerView, CpuCoolerView
+from velocityapi.views import CaseFanView, CaseView, ComputerView, CpuCoolerView, CustomerView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'casefans', CaseFanView, 'casefan')
 router.register(r'cases', CaseView, 'case')
 router.register(r'computers', ComputerView, 'computer')
 router.register(r'cpu_coolers', CpuCoolerView, 'cpu_cooler')
+router.register(r'customers', CustomerView, 'customer')
 
 urlpatterns = [
     path('register', register_user),
