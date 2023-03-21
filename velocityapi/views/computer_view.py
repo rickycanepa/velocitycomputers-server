@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 class ComputerView(ViewSet):
     """Velocity computers view"""
 
+
     def retrieve(self, request, pk):
         """Handle GET requests for single computer
         
@@ -50,15 +51,15 @@ class ComputerView(ViewSet):
     def create(self, request):
         customer = Customer.objects.get(user=request.auth.user)
         power_supply = PowerSupply.objects.get(pk=request.data["power_supply"])
-        processor = Processor.objects.get(pk=request.data(["processor"]))
-        gpu = GPU.objects.get(pk=request.data(["gpu"]))
-        motherboard = Motherboard.objects.get(pk=request.data(["motherboard"]))
-        ram = RAM.objects.get(pk=request.data(["gpu"]))
-        case = Case.objects.get(pk=request.data(["case"]))
-        cpu_cooler = CpuCooler.objects.get(pk=request.data("cpu_cooler"))
-        keyboard = Keyboard.objects.get(pk=request.data("keyboard"))
-        mouse = Mouse.objects.get(pk=request.data("mouse"))
-        ssd = SSD.objects.get(pk=request.data("ssd"))
+        processor = Processor.objects.get(pk=request.data["processor"])
+        gpu = GPU.objects.get(pk=request.data["gpu"])
+        motherboard = Motherboard.objects.get(pk=request.data["motherboard"])
+        ram = RAM.objects.get(pk=request.data["ram"])
+        case = Case.objects.get(pk=request.data["case"])
+        cpu_cooler = CpuCooler.objects.get(pk=request.data["cpu_cooler"])
+        keyboard = Keyboard.objects.get(pk=request.data["keyboard"])
+        mouse = Mouse.objects.get(pk=request.data["mouse"])
+        ssd = SSD.objects.get(pk=request.data["ssd"])
 
         computer = Computer.objects.create(
             name=request.data["name"],

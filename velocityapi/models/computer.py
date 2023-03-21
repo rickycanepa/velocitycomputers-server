@@ -15,7 +15,6 @@ class Computer(models.Model):
     keyboard = models.ForeignKey("Keyboard", on_delete=models.CASCADE, related_name='computer')
     mouse = models.ForeignKey("Mouse", on_delete=models.CASCADE, related_name='computer')
     ssd = models.ForeignKey("SSD", on_delete=models.CASCADE, related_name='computer')
-    price = models.DecimalField(max_digits=10, decimal_places=2)
     likes = models.ManyToManyField(Customer, through='Favorite', related_name='computers_favorited')
 
     @property
@@ -25,3 +24,19 @@ class Computer(models.Model):
     @joined.setter
     def joined(self, value):
         self.__joined = value
+
+    @property
+    def price(self):
+        total_price = 0
+        total_price += self.power_supply.price
+        total_price += self.processor.price
+        total_price += self.gpu.price
+        total_price += self.motherboard.price
+        total_price += self.ram.price
+        total_price += self.case.price
+        total_price += self.cpu_cooler.price
+        total_price += self.keyboard.price
+        total_price += self.mouse.price
+        total_price += self.ssd.price
+
+        return total_price
