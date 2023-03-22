@@ -1,6 +1,7 @@
 """View module for handling requests about computers"""
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from velocityapi.models import Computer, Favorite, Customer, PowerSupply, Processor, GPU, Motherboard, RAM, Case, CpuCooler, Keyboard, Mouse, SSD
@@ -24,36 +25,33 @@ class ComputerView(ViewSet):
 
 
     def list(self, request):
-        """Handle GET requests to get all computers
+        """Handle GET requests to get all computers, filtered by customer if customer ID is provided in query parameters
 
         Returns:
             Response -- JSON serialized list of computers
         """
-        if "customer" in request.query_params:
+        customer_id = request.query_params.get('customer')
+        if customer_id:
+            customer_instance = Customer.objects.get(pk=customer_id)
+            computers = Computer.objects.filter(customer=customer_instance)
+        else:
+            computers = Computer.objects.all()
 
-            customer_instance = customer.objects.get(
-                pk=request.query_params['customer'])
-            computers = computers.filter(customer=customer_instance)
-
-            serialized = ComputerSerializer(computers, many=True)
-            return Response(serialized.data, status=status.HTTP_200_OK)
-            
-
-        # if "myfavorites" in request.query_params
-            # myfavorites = Favorites.objects.filter(customer=person whos logged in)
-            # return Response(the serialized favorites)
-        elif "myfavorites" in request.query_params:
+        if "myfavorites" in request.query_params:
             customer = Customer.objects.get(user=request.auth.user)
-            myfavorites = Favorite.objects.filter(customer=request.auth.user)
+            myfavorites = Favorite.objects.filter(customer=customer)
             serializer = FavoriteSerializer(myfavorites, many=True)
             return Response(serializer.data)
         else:
-            computers = Computer.objects.all()
             # Set the `joined` property on every computer
             for computer in computers:
-                customer = Customer.objects.get(user=request.auth.user)
-                # Check to see if the customer is in the favorites list on the event
-                computer.joined =  customer in computer.likes.all()
+                if request.auth.user.is_authenticated:
+                    customer = Customer.objects.get(user=request.auth.user)
+                    # Check to see if the customer is in the favorites list on the computer
+                    computer.joined = customer in computer.likes.all()
+                else:
+                    computer.joined = False
+
             serializer = ComputerSerializer(computers, many=True)
             return Response(serializer.data)
     
@@ -87,6 +85,43 @@ class ComputerView(ViewSet):
         )
         serializer = ComputerSerializer(computer)
         return Response(serializer.data)
+    
+    def update(self, request, pk):
+        """Handle PUT requests for a computer
+        
+        Return: -- Empty body with 204 status code
+        """
+
+        computer = Computer.objects.get(pk=pk)
+        computer.name = request.data["name"]
+        computer.description = request.data["description"]
+
+        power_supply = PowerSupply.objects.get(pk=request.data["power_supply"])
+        processor = Processor.objects.get(pk=request.data["processor"])
+        gpu = GPU.objects.get(pk=request.data["gpu"])
+        motherboard = Motherboard.objects.get(pk=request.data["motherboard"])
+        ram = RAM.objects.get(pk=request.data["ram"])
+        case = Case.objects.get(pk=request.data["case"])
+        cpu_cooler = CpuCooler.objects.get(pk=request.data["cpu_cooler"])
+        keyboard = Keyboard.objects.get(pk=request.data["keyboard"])
+        mouse = Mouse.objects.get(pk=request.data["mouse"])
+        ssd = SSD.objects.get(pk=request.data["ssd"])
+        computer.power_supply=power_supply
+        computer.processor=processor
+        computer.gpu=gpu
+        computer.motherboard=motherboard
+        computer.ram=ram
+        computer.case=case
+        computer.cpu_cooler=cpu_cooler
+        computer.keyboard=keyboard
+        computer.mouse=mouse
+        computer.ssd=ssd
+        computer.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+
+
 
     
 class ComputerSerializer(serializers.ModelSerializer):
@@ -103,3 +138,13 @@ class FavoriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Favorite
         fields = ("computer")
+
+@action(methods=['post'], detail=True)
+def favorite(self, request, pk):
+    """Post request for a user to sign up for an event"""
+   
+    customer = Customer.objects.get(user=request.auth.user)
+    computer = Computer.objects.get(pk=pk)
+    computer.favorites.add(customer)
+    return Response({'message': 'User added'}, status=status.HTTP_201_CREATED)
+    

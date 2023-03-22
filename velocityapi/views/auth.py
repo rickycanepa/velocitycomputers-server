@@ -4,7 +4,6 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-
 from velocityapi.models import Customer
 
 @api_view(['POST'])
@@ -25,9 +24,15 @@ def login_user(request):
     # If authentication was successful, respond with their token
     if authenticated_user is not None:
         token = Token.objects.get(user=authenticated_user)
+        try:
+            customer= Customer.objects.get(user=authenticated_user)
+            customer_id = customer.id
+        except Customer.DoesNotExist:
+            customer_id = None
         data = {
             'valid': True,
-            'token': token.key
+            'token': token.key,
+            'customer_id': customer_id  
         }
         return Response(data)
     else:
