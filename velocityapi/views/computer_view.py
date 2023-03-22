@@ -29,11 +29,20 @@ class ComputerView(ViewSet):
         Returns:
             Response -- JSON serialized list of computers
         """
+        if "customer" in request.query_params:
+
+            customer_instance = customer.objects.get(
+                pk=request.query_params['customer'])
+            computers = computers.filter(customer=customer_instance)
+
+            serialized = ComputerSerializer(computers, many=True)
+            return Response(serialized.data, status=status.HTTP_200_OK)
+            
 
         # if "myfavorites" in request.query_params
             # myfavorites = Favorites.objects.filter(customer=person whos logged in)
             # return Response(the serialized favorites)
-        if "myfavorites" in request.query_params:
+        elif "myfavorites" in request.query_params:
             customer = Customer.objects.get(user=request.auth.user)
             myfavorites = Favorite.objects.filter(customer=request.auth.user)
             serializer = FavoriteSerializer(myfavorites, many=True)
@@ -75,7 +84,6 @@ class ComputerView(ViewSet):
             keyboard=keyboard,
             mouse=mouse,
             ssd=ssd,
-            price=request.data["price"]
         )
         serializer = ComputerSerializer(computer)
         return Response(serializer.data)
