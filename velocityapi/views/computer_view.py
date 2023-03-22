@@ -120,6 +120,23 @@ class ComputerView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+    @action(methods=['post'], detail=True)
+    def favorite(self, request, pk):
+            """Post request for a user to favorite for a computer"""
+        
+            customer = Customer.objects.get(user=request.auth.user)
+            computer = Computer.objects.get(pk=pk)
+            computer.likes.add(customer)
+            return Response({'message': 'User added'}, status=status.HTTP_201_CREATED)
+    
+    @action(methods=['delete'], detail=True)
+    def unfavorite(self, request, pk):
+            """Delete request for a user to sign up for an event"""
+    
+            customer = Customer.objects.get(user=request.auth.user)
+            computer = Computer.objects.get(pk=pk)
+            Favorite.objects.get(customer=customer, computer=computer).delete()
+            return Response({'message': 'Gamer removed'}, status=status.HTTP_204_NO_CONTENT)
 
 
 
@@ -130,7 +147,7 @@ class ComputerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Computer
         fields = ('id', 'name', "description", "customer", "power_supply", "processor", "gpu", "motherboard", "ram", "case", "cpu_cooler", "keyboard", "mouse", "ssd", "price", "likes", "joined")
-        depth = 2
+        depth = 3
 
 class FavoriteSerializer(serializers.ModelSerializer):
 
@@ -139,12 +156,4 @@ class FavoriteSerializer(serializers.ModelSerializer):
         model = Favorite
         fields = ("computer")
 
-@action(methods=['post'], detail=True)
-def favorite(self, request, pk):
-    """Post request for a user to sign up for an event"""
-   
-    customer = Customer.objects.get(user=request.auth.user)
-    computer = Computer.objects.get(pk=pk)
-    computer.favorites.add(customer)
-    return Response({'message': 'User added'}, status=status.HTTP_201_CREATED)
     
