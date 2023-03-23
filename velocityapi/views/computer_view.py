@@ -11,6 +11,11 @@ from django.contrib.auth.decorators import login_required
 class ComputerView(ViewSet):
     """Velocity computers view"""
 
+    def destroy(self, request, pk):
+        computer = Computer.objects.get(pk=pk)
+        computer.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 
     def retrieve(self, request, pk):
         """Handle GET requests for single computer
