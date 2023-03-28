@@ -32,7 +32,7 @@ def login_user(request):
         data = {
             'valid': True,
             'token': token.key,
-            'customer_id': customer_id  
+            'user_id': customer_id  
         }
         return Response(data)
     else:
